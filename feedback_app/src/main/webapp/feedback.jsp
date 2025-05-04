@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>ABOUT | Feedback APP</title>
+    <title>User Feedback | Feedback APP</title>
     <%@include file="./components/styles.jsp" %>
   </head>
   <body>
@@ -19,10 +19,10 @@
   			<th>Feedback</th>
   		</tr>
   		<tr>
-  			<td></td>
-  			<td></td>
-  			<td></td>
-  			<td></td>
+  			<td><%= request.getAttribute("name") %></td>
+  			<td><%= request.getAttribute("phone") %></td>
+  			<td><%= request.getAttribute("email") %></td>
+  			<td><%= request.getAttribute("feedback") %></td>
   		</tr>
   	</table>
     
